@@ -288,6 +288,193 @@ body {
     padding: 12px 16px;
  }
 
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    position: absolute;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    bottom: -8px;
+}
+
+ @media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left, .right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left div h1 {
+        font-size: 2.5rem;
+        margin: 10px 0;
+        padding-top: 40px;
+    }
+
+    .left div p {
+        font-size: 1.2rem;
+        margin: 13px 0;
+    }
+
+    .right img {
+        margin: 20px 0;
+    }
+
+    .btn {
+        margin: 20px auto;
+    }
+
+    .about h1 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        padding: 2px 20px;
+    }
+
+    .introduction {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .introduction .left img {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .introduction .right {
+        width: 100%;
+        text-align: center;
+    }
+
+     .introduction p {
+        width: 100%;
+        text-align: center;
+     }
+
+     .introduction h2 {
+        margin-top: 0;
+     }
+
+    .products {
+        height: auto;
+        padding-top: 20px;
+    }
+
+    .products h1 {
+        font-size: 2rem;
+    }
+
+    .products p {
+        padding: 10px 20px;
+    }
+
+    .items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .testimonials h1 {
+        font-size: 2rem;
+    }
+
+    .testimonials p {
+        padding: 10px 20px;
+    }
+
+    .benifits {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .key {
+        margin: 20px 0;
+    }
+
+    .contact-us {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-us .left,
+    .contact-us .right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info {
+        justify-content: center;
+    }
+
+    .form {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .nav-toggle-label {
+        display: block;
+    }
+
+    .links {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .links ul {
+        flex-direction: column;
+    }
+
+    .links li {
+        margin: 1rem 0;
+    }
+
+    .nav-items {
+        flex-wrap: wrap;
+    }
+
+    .nav-toggle:checked ~ .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+ }
+
 
 
 
