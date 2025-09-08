@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <div class="main">
+        <div class="hero">
+             <h1>Products</h1>
+            <p>Explore our wide range of high-quality products.</p>
+            <a href="index.html">Home</a>
+        </div>
+        <div class="products">
+            <h2 style="font-size: 2.6rem; margin: 10px 20px;">Our Products</h2>
+            <p style="font-size: 1.3rem; margin: 10px 20px;">Discover our range of premium products designed to meet your needs Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla corporis reiciendis deleniti dolore velit sunt voluptas amet quis, incidunt, aliquid recusandae laudantium commodi totam, necessitatibus perspiciatis exercitationem non fuga! Sint ullam et corrupti facilis. Inventore, cumque quis exercitationem officiis architecto tempora alias! Incidunt, alias nulla! Facilis impedit voluptatibus repellat pariatur?</p>
+            <div class="card">
+                <img src="WhatsApp Image 2025-09-02 at 2.26.16 PM.jpeg" alt="">
+                <h3>Mango Pulp</h3>
+                <button onclick="openPopup('popup1')">View Details</button>
+            </div>
+            <div class="card">
+                <img src="WhatsApp Image 2025-09-02 at 2.34.46 PM.jpeg" alt="">
+                <h3>Puffed Rice</h3>
+                <button onclick="openPopup('popup2')">View Details</button>
+            </div>
+              <!-- Popup 1 -->
+  <div id="popup1" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('popup1')">&times;</span>
+      <h3>Popup 1</h3>
+      <p>This is the content for the first popup.</p>
+    </div>
+  </div>
+
+
+
+    <!-- Popup 2 -->
+  <div id="popup2" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup('popup2')">&times;</span>
+      <h3>Popup 2</h3>
+      <p>This is some different content for the second popup.</p>
+    </div>
+  </div>
+
+
+
+
+
+        </div>
+         <footer>
+            <div class="footer">
+                <div class="f-info"><p>ADIK Overseas LLP is a merchant exporter bringing high-quality Indian products to international markets. </p></div>
+                <div class="quick-links">
+                  <h3>Quick Links</h3>
+                       
+                       <a href="aboutus.html"> <p >About Us</p></a>
+                        <a href=""> <p >Certifications</p></a>
+                       <a href=""> <p >Products</p></a>
+                       <a href="contact.html"> <p >Contact</p></a>
+                   
+                </div>
+                  <div class="social-links">
+                   <h3>Social Links</h3>
+                       <a href=""> <p >Linkedin</p></a>
+                       <a href=""> <p >Instagram</p></a>
+                   
+                </div>
+                <div class="f-location">
+
+                    <h3>Our Location</h3>
+                  
+                    <p>Sr.No.45/2 Ambegaon (BK), Pune, Maharashtra 411046</p>          
+                   
+                    <p>adikoverseas4@gmail.com</p>
+
+                </div>
+              
+            </div>
+            <p>&copy; 2025 ADIK Overseas LLP. All rights reserved.</p>
+        </footer>
+    </div>
+      <script>
+    function openPopup(id) {
+      document.getElementById(id).style.display = "flex";
+    }
+
+    function closePopup(id) {
+      document.getElementById(id).style.display = "none";
+    }
+
+    // Close popup if user clicks outside content
+    window.onclick = function(event) {
+      if (event.target.classList.contains("popup")) {
+        event.target.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

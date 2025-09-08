@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
+ 
+}
+.hero {
+  background-color: #404040;
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+ 
+}
+.hero a{
+     text-decoration: none;
+    color: white;
+    background-color: #3b78fc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-top: 20px;
+    display: inline-block;
+}
+span{
+    font-size: 1.2rem;
+    color: #3b78fc;
+    font-weight: 500;
+}
+.left{
+    width: 50%;
+    padding: 50px;
+}
+.right{
+    width: 50%;
+    padding: 50px;
+}
+.about{
+    display: flex;
+    justify-content: center;
+   
+}
+.right img{
+    width: 100%;
+    border-radius: 10px;
+}
+.left h2{
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+.left p{
+    font-size: 1.1rem;
+    line-height: 1.1;
+    color: #555;
+    margin: 20px 0px;
+}
+
+.vision h2, .mission h2{
+   padding:10px 50px;
+   
+    font-size: 2.5rem;
+}
+.vision p, .mission p{
+    padding:5px 50px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #555;
+    margin: 20px 0px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px;
+}
+ footer {
+    background-color: #11123f;
+    color: white;
+    height: auto;
+    text-align: center;
+    padding: 12px 0;
+    
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+  
+}
+footer p{
+    margin: 0;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+.f-location p{
+    margin: 10px;
+}
+.f-info{
+    width: 20%;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+.values-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f7f7f7;
+}
+
+.subheading {
+  color: #2d6cdf;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.main-heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #1a1a1a;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.card {
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 320px;
+  padding: 25px 20px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.card-header .icon {
+  font-size: 20px;
+  color: #2d6cdf;
+}
+
+.card-header h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.card-text {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #4a4a4a;
+}
