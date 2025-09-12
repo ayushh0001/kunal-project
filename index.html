@@ -53,19 +53,19 @@
         <section class="stats-section">
     <div class="stat-box">
       <i class="fas fa-globe"></i>
-      <h3>50+</h3>
+      <h3>5+</h3>
       <p>Countries Served</p>
     </div>
 
     <div class="stat-box">
       <i class="fas fa-ship"></i>
-      <h3>1000+</h3>
+      <h3>68+</h3>
       <p>Shipments Delivered</p>
     </div>
 
     <div class="stat-box">
       <i class="fas fa-users"></i>
-      <h3>500+</h3>
+      <h3>52+</h3>
       <p>Happy Clients</p>
     </div>
 
@@ -92,28 +92,33 @@ Our focus is on providing seamless export solutions that combine quality, reliab
         <section class="products" id="Products">
             <h1>Our Products</h1>
             <p>We specialize in manufacturing and exporting premium Mango Pulp and high-quality Puffed Rice, sourced directly from our farms and processed under strict hygiene standards. Our products are rich in taste, freshness, and nutrition, catering to global food and beverage industries.</p>
-           <div class="items">
+             <div class="card-container">
+    
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="WhatsApp Image 2025-09-02 at 2.26.16 PM.jpeg" alt="Mango Pulp">
+      <div class="card-content">
+        <h3>Mango Pulp</h3>
+        <p>Our mango pulp is made from the finest quality Alphonso Mangoes, ensuring a rich and authentic flavor that's perfect for desserts, smoothies, and more.</p>
+      </div>
+      <div class="card-footer">
+        <button id="product">Details</button>
+      </div>
+    </div>
 
-            <div class="card">
-                <img src="WhatsApp Image 2025-09-02 at 2.26.16 PM.jpeg" alt="">
-                <h2>Mango Pulp</h2>
-                <p>Our mango pulp is made from the finest quality Alphonso Mangoes, ensuring a rich and authentic flavor that's perfect for desserts, smoothies, and more.</p>
-            </div>
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="WhatsApp Image 2025-09-02 at 2.34.46 PM.jpeg" alt="Puffed Rice">
+      <div class="card-content">
+        <h3>Puffed Rice</h3>
+        <p>Crunchy and light, our puffed rice is perfect for snacking and adding to your favorite dishes.</p>
+      </div>
+      <div class="card-footer">
+        <button id="product">Details</button>
+      </div>
+    </div>
 
-             <!-- <div class="card">
-                <img src="assets_task_01k3rnrdzqfw8rk72ha7w0zv1j_1756396149_img_0.webp" alt="">
-                <h2>Organic Carrots</h2>
-                <p>Crunchy and sweet, our organic carrots are a favorite for snacking and cooking.</p>
-            </div> -->
-
-             <div class="card">
-                <img src="WhatsApp Image 2025-09-02 at 2.34.46 PM.jpeg" alt="">
-                <h2>Puffed Rice</h2>
-                <p>Crunchy and light, our puffed rice is perfect for snacking and adding to your favorite dishes.</p>
-            </div>
-
-
-           </div>
+  </div>
         </section>
         <section class="testimonials">
           <h1>Our Values</h1>
@@ -237,10 +242,10 @@ Our focus is on providing seamless export solutions that combine quality, reliab
                 <div class="f-info"><p>ADIK Overseas LLP is a merchant exporter bringing high-quality Indian products to international markets. </p></div>
                 <div class="quick-links">
                   <h3>Quick Links</h3>
-                       
+                       <a href="index.html"><p>Home</p></a>
                        <a href="aboutus.html"> <p >About Us</p></a>
                         <a href=""> <p >Certifications</p></a>
-                       <a href=""> <p >Products</p></a>
+                       <a href="product.html"> <p >Products</p></a>
                        <a href="contact.html"> <p >Contact</p></a>
 
                 </div>
@@ -256,7 +261,7 @@ Our focus is on providing seamless export solutions that combine quality, reliab
                     <h3>Our Location</h3>
                     <p>Sr.No.45/2 Ambegaon (BK), Pune, Maharashtra 411046</p>          
                    
-                    <p>adikoverseas4@gmail.com</p>
+                     <a href="mailto:adikoverseas4@gmail.com">adikoverseas4@gmail.com</a>
 
                 </div>
               
@@ -265,6 +270,11 @@ Our focus is on providing seamless export solutions that combine quality, reliab
         </footer>
     </div>
  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+ <script>
+   document.getElementById("product").addEventListener("click", function() {
+    window.location.href = "product.html";
+   });
+ </script>
 
 
 
