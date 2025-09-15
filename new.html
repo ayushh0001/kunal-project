@@ -6,111 +6,154 @@
   <title>Product Cards</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
       margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
       padding: 40px;
+    }
+
+    .product-container {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      align-items: flex-start;
+      gap: 25px;
     }
 
-    .card-container {
-      display: flex;
-      gap: 40px;
-    }
-
-    .card {
+    .product-card {
       background: #fff;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      overflow: hidden;
-      width: 300px;
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 320px;
+      padding: 20px;
+      transition: transform 0.2s ease;
     }
 
-    .card:hover {
+    .product-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
 
-    .card img {
+    .product-card img {
       width: 100%;
-      height: 250px;
-      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
     }
 
-    .card-content {
-      padding: 16px;
-      flex: 1;
-    }
-
-    .card-content h3 {
-      margin: 0 0 10px;
+    .product-title {
       font-size: 20px;
       font-weight: bold;
-      color: #000;
+      color: #111;
+      margin-bottom: 10px;
     }
 
-    .card-content p {
+    .product-desc {
       font-size: 14px;
-      color: #555;
+      color: #444;
       line-height: 1.5;
+      margin-bottom: 15px;
     }
 
-    .card-footer {
-      padding: 12px 16px;
-      background: #2f3c8c;
-      display: flex;
-      justify-content: flex-start;
+    .product-price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #f97316; /* orange */
+      margin-bottom: 15px;
     }
 
-    .card-footer button {
-      background: #2563eb;
+    .add-to-cart {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #f59e0b; /* amber */
       color: #fff;
+      font-size: 15px;
+      font-weight: bold;
+      padding: 12px;
       border: none;
-      padding: 8px 16px;
       border-radius: 6px;
       cursor: pointer;
-      font-size: 14px;
-      font-weight: bold;
-      transition: background 0.2s ease;
+      text-decoration: none;
+      transition: background 0.3s;
     }
 
-    .card-footer button:hover {
-      background: #1d4ed8;
+    .add-to-cart:hover {
+      background: #d97706;
+    }
+
+    .nutrition-title {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .nutrition-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px 15px;
+      font-size: 14px;
+    }
+
+    .nutrition-list p {
+      margin: 0;
+      color: #333;
+    }
+
+    .nutrition-list strong {
+      font-weight: bold;
     }
   </style>
+
+  <!-- Font Awesome for cart icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <div class="card-container">
-    
-    <!-- Card 1 -->
-    <div class="card">
-      <img src="https://i.ibb.co/NrZ5vPb/mango-pulp.jpg" alt="Mango Pulp">
-      <div class="card-content">
-        <h3>Mango Pulp</h3>
-        <p>Our mango pulp is made from the finest quality Alphonso Mangoes, ensuring a rich and authentic flavor that's perfect for desserts, smoothies, and more.</p>
+
+  <div class="product-container">
+
+    <!-- Product 1 -->
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200.png?text=Mango+Pulp" alt="Mango Pulp">
+      <div class="product-title">Premium Mango Pulp</div>
+      <div class="product-desc">
+        Made from the finest Alphonso mangoes, our pulp is rich, sweet, and perfect for desserts, smoothies, or enjoying on its own.
       </div>
-      <div class="card-footer">
-        <button>Details</button>
+      <div class="product-price">$8.99</div>
+      <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+
+      <div class="nutrition-title">Nutritional Information</div>
+      <div class="nutrition-list">
+        <p><strong>Calories:</strong> 120</p>
+        <p><strong>Fat:</strong> 0.5g</p>
+        <p><strong>Carbs:</strong> 28g</p>
+        <p><strong>Protein:</strong> 1g</p>
+        <p><strong>Sugar:</strong> 25g</p>
+        <p><strong>Vitamin C:</strong> 60%</p>
       </div>
     </div>
 
-    <!-- Card 2 -->
-    <div class="card">
-      <img src="https://i.ibb.co/xMN3qvh/puffed-rice.jpg" alt="Puffed Rice">
-      <div class="card-content">
-        <h3>Puffed Rice</h3>
-        <p>Crunchy and light, our puffed rice is perfect for snacking and adding to your favorite dishes.</p>
+    <!-- Product 2 -->
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200.png?text=Puffed+Rice" alt="Puffed Rice">
+      <div class="product-title">Crispy Puffed Rice</div>
+      <div class="product-desc">
+        Light and airy puffed rice, ideal for breakfast cereals, snacks, or as a base for various dishes. A healthy and versatile addition to your pantry.
       </div>
-      <div class="card-footer">
-        <button>Details</button>
+      <div class="product-price">$4.99</div>
+      <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+
+      <div class="nutrition-title">Nutritional Information</div>
+      <div class="nutrition-list">
+        <p><strong>Calories:</strong> 60</p>
+        <p><strong>Fat:</strong> 0.1g</p>
+        <p><strong>Carbs:</strong> 13g</p>
+        <p><strong>Protein:</strong> 1.2g</p>
+        <p><strong>Fiber:</strong> 0.2g</p>
+        <p><strong>Iron:</strong> 2%</p>
       </div>
     </div>
 
   </div>
+
 </body>
 </html>
