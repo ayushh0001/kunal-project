@@ -16,7 +16,7 @@
      <nav>
             <div class="navbar">
                 <div class="nav-items">
-                    <div class="logo"><img src="" alt=""></div>
+                    <div class="logo" style="color: white;margin-left: 10px;"><img src="" alt="">ADIK</div>
                     <div class="links">
                         <ul>
                             <li><a href="#Home">Home</a></li>
@@ -53,41 +53,85 @@
         <section class="stats-section">
     <div class="stat-box">
       <i class="fas fa-globe"></i>
-      <h3>5+</h3>
+      <h3 class="counter" data-target="5">0+</h3>
       <p>Countries Served</p>
     </div>
 
     <div class="stat-box">
       <i class="fas fa-ship"></i>
-      <h3>68+</h3>
+      <h3 class="counter" data-target="68">0+</h3>
       <p>Shipments Delivered</p>
     </div>
 
     <div class="stat-box">
       <i class="fas fa-users"></i>
-      <h3>52+</h3>
+      <h3 class="counter" data-target="52">0+</h3>
       <p>Happy Clients</p>
     </div>
 
     
   </section>
         <section class="about" id="About">
-            <h1>About us</h1>
-            <p>Adik Overseas LLP is a trusted merchant exporter based in India, dedicated to connecting high-quality Indian products with international markets.Our focus is on providing seamless export solutions that combine quality, reliability, and customer satisfaction.
-</p>
-<div class="introduction">
-    <div class="left"><img src="factory2.jpeg" alt=""> </div>
-    <div class="right">
-        <h2>We deal in diverse categories based on customer needs, including:</h2>
-    <div class="description"><ul>
-      <li>We also specialise in manufacturing our own Mango Pulp and Puffed Rice</li>
-      <li>Customized Sourcing: Any product as per buyer’s specification</li>
-        <li >Food & Beverages: Mango pulp, rice, spices, packaged foods</li>
-        <li>Fresh & Frozen Items: Fruits, vegetables, and specialty products</li>
-        <li>Industrial Goods: Machinery parts, assemblies, and components</li>
-    </ul></div>
-    </div>
-</div>
+           
+<div class="wrapper">
+    <header class="heading-box">
+      <h1 style="font-size: 3rem; margin-bottom: 20px;">About Us</h1>
+      <h1>We deal in diverse categories based on customer needs, including:</h1>
+     
+    </header>
+
+    <section class="card-area">
+      <article class="info-box">
+        <div class="badge b1">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 13.5V21h18v-7.5l-5-2.5v2.5h-2v-3L10 14v-3L6 11v2.5H3zM5 6h2v6H5V6zm4-3h2v9H9V3z"/></svg>
+        </div>
+        <div>
+          <h3>Manufacturing</h3>
+          <p>We also specialise in manufacturing our own Mango Pulp and Puffed Rice.</p>
+        </div>
+      </article>
+
+      <article class="info-box">
+        <div class="badge b2">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 4a6 6 0 1 0 0 12 6 6 0 0 0 0-12zm8.707 13.293-3.387-3.387A7.5 7.5 0 1 1 18 17.5l.707.793z"/></svg>
+        </div>
+        <div>
+          <h3>Customized Sourcing</h3>
+          <p>Any product as per buyer’s specification.</p>
+        </div>
+      </article>
+
+      <article class="info-box">
+        <div class="badge b3">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM6.2 6l.8 4h10.2l2-6H8.5L7.8 2H3v2h3.2l.98 4z"/></svg>
+        </div>
+        <div>
+          <h3>Food & Beverages</h3>
+          <p>Mango pulp, rice, spices, packaged foods.</p>
+        </div>
+      </article>
+
+      <article class="info-box">
+        <div class="badge b4">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 8v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8l9-4 9 4zM12 4.2 5 7v2h14V7l-7-2.8z"/></svg>
+        </div>
+        <div>
+          <h3>Fresh & Frozen Items</h3>
+          <p>Fruits, vegetables, and specialty products.</p>
+        </div>
+      </article>
+
+      <article class="info-box">
+        <div class="badge b5">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 21h16V3H4v18zm4-12h2v2H8V9zm0 4h2v2H8v-2zm4-4h2v2h-2V9zm0 4h2v2h-2v-2z"/></svg>
+        </div>
+        <div>
+          <h3>Industrial Goods</h3>
+          <p>Machinery parts, assemblies, and components.</p>
+        </div>
+      </article>
+    </section>
+  </div>
         </section>
         <section class="products" id="Products">
             <h1>Our Products</h1>
@@ -95,50 +139,72 @@
              <div class="card-container">
     
     <!-- Card 1 -->
-    <div class="card">
+   <div class="card" id="product">
       <img src="WhatsApp Image 2025-09-02 at 2.26.16 PM.jpeg" alt="Mango Pulp">
       <div class="card-content">
-        <h3>Mango Pulp</h3>
-        <p>Our mango pulp is made from the finest quality Alphonso Mangoes, ensuring a rich and authentic flavor that's perfect for desserts, smoothies, and more.</p>
-      </div>
-      <div class="card-footer">
-        <button id="product">Details</button>
+        <h3>Exquisite Mango Pulp</h3>
+        <p>
+          Our mango pulp is made from the finest quality Alphonso Mangoes, ensuring a rich and authentic flavor that's perfect for desserts, smoothies, and more.
+        </p>
+        <a href="product.html" class="btn1">
+          Discover More
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
       </div>
     </div>
 
-    <!-- Card 2 -->
-    <div class="card">
+    <!-- Indian Spices -->
+    <div class="card" id="product">
       <img src="WhatsApp Image 2025-09-02 at 2.34.46 PM.jpeg" alt="Puffed Rice">
       <div class="card-content">
         <h3>Puffed Rice</h3>
-        <p>Crunchy and light, our puffed rice is perfect for snacking and adding to your favorite dishes.</p>
+        <p>
+          Our puffed rice is a light and nutritious snack, perfect for any time of the day. Made from high-quality rice, it's a versatile ingredient that can be used in a variety of dishes, from breakfast cereals to savory snacks.
+        </p>
+        <a href="product.html" class="btn1">
+          Discover More
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </a>
       </div>
-      <div class="card-footer">
-        <button id="product">Details</button>
-      </div>
+      
     </div>
 
   </div>
         </section>
-        <section class="testimonials">
-          <h1>Our Values</h1>
-          <p>We prioritize quality first, ensuring that every product we source and deliver meets global standards. With integrity and customer focus, we foster transparent, reliable trade partnerships worldwide. Driven by innovation and committed to sustainability, we enhance our processes while supporting eco-friendly practices to create lasting global value.</p>
-<div class="benifits">
-<div class="key">
-    <h3>Vision </h3>
-    <p>To become a globally recognized merchant exporter from India, trusted for reliability, quality, and service.</p>
-</div>
-<!-- <div class="key">
-    <h3>100% Organic</h3>
-    <p>We are committed to providing only the highest quality organic vegetables, free from synthetic pesticides and fertilizers.</p>
-</div> -->
+        <section class="principles-section">
+    <h5>Our Core Principles</h5>
+    <h2>Our Values, Vision & Mission</h2>
+    <p>At the heart of our operations lie our core values, guiding every decision we make. 
+       We are dedicated to upholding the highest standards of quality, integrity, and 
+       innovation in the global marketplace.</p>
 
-<div class="key">
-    <h3>Mission</h3>
-    <p>To provide customized export solutions, ensuring our clients receive the right product, at the right price, on time.</p>
-</div>
-</div>
-        </section>
+    <div class="cards-container">
+      <!-- Values -->
+      <div class="principle-card">
+        <div class="principle-icon">⚙️</div>
+        <h3>Our Values</h3>
+        <p>We prioritize quality first, ensuring that every product we source and deliver meets global standards. With integrity and customer focus, we foster transparent, reliable trade partnerships worldwide.</p>
+      </div>
+
+      <!-- Vision -->
+      <div class="principle-card">
+        <div class="principle-icon">👁️</div>
+        <h3>Our Vision</h3>
+        <p>To become a globally recognized merchant exporter from India, trusted for reliability, quality, and service, setting new benchmarks in the industry.</p>
+      </div>
+
+      <!-- Mission -->
+      <div class="principle-card">
+        <div class="principle-icon">🎯</div>
+        <h3>Our Mission</h3>
+        <p>To provide customized export solutions, ensuring our clients receive the right product, at the right price, on time, every time, fostering long-term success.</p>
+      </div>
+    </div>
+  </section>
         
 
 
@@ -157,23 +223,23 @@
 
       <div class="testimonial">
         <div class="stars">★★★★★</div>
-        <p>"ADIK Overseas has been our trusted logistics partner for over 5 years. Their reliability and professional service have helped us expand to 15 countries."</p>
-        <h4>Rajesh Kumar</h4>
-        <span>Kumar Textiles Ltd</span>
+        <p>"From packaging to delivery, everything was handled with utmost care. Highly recommended for anyone seeking a trusted merchant exporter from India."</p>
+        <h4>Venkatesh Murthy</h4>
+ 
       </div>
 
       <div class="testimonial">
         <div class="stars">★★★★★</div>
-        <p>"Exceptional service quality and competitive pricing. They handle our delicate handicraft exports with utmost care and professionalism."</p>
-        <h4>Priya Sharma</h4>
-        <span>Artisan Crafts Co</span>
+        <p>"Excellent quality, competitive pricing, and smooth logistics. Working with Adik Overseas LLP has been a hassle-free experience"</p>
+        <h4>Amanpreet Singh</h4>
+       
       </div>
 
       <div class="testimonial">
         <div class="stars">★★★★★</div>
         <p>"Working with ADIK Overseas has streamlined our import process from India. Their documentation and customs support is outstanding."</p>
-        <h4>Michael Johnson</h4>
-        <span>Global Importers Inc</span>
+        <h4>Sophia</h4>
+      
       </div>
 
     </div>
@@ -192,7 +258,7 @@
 </svg></div>
                         <div>
                             <h3>Address</h3>
-                            <p>Sr.No.45/2 Ambegaon (BK), Pune, Maharashtra 411046</p>
+                            <p>Sr.No.45/2 Ambegaon (BK), Pune, Maharashtra,India 411046</p>
                         </div>
                     </div> 
 
@@ -221,8 +287,12 @@
                 </div>
                 <div class="right">
                     <div class="form">
-                        <form action="">
+                        <form  action="https://api.web3forms.com/submit" method="POST">
                             <h3 style="margin: 20px 0; font-weight: bolder; font-size: 1.5rem;">Send us a message</h3>
+
+ <input type="hidden" name="access_key" value="2a544249-1c8c-4183-ba4b-652dce5c3b19">
+
+
                             <label for="name">Name:</label><br>
                             <input type="text" id="name" name="name" required>
                             <br>
@@ -259,7 +329,7 @@
                 <div class="f-location">
 
                     <h3>Our Location</h3>
-                    <p>Sr.No.45/2 Ambegaon (BK), Pune, Maharashtra 411046</p>          
+                    <p>Sr.No.45/2 Ambegaon (BK), Pune, Maharashtra, India 411046</p>          
                    
                      <a href="mailto:adikoverseas4@gmail.com">adikoverseas4@gmail.com</a>
 
@@ -274,7 +344,11 @@
    document.getElementById("product").addEventListener("click", function() {
     window.location.href = "product.html";
    });
+   document.getElementById("product").addEventListener("click", function() {
+    window.location.href = "product.html";
+   });
  </script>
+ <script src="script.js"></script>
 
 
 
