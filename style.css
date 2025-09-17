@@ -836,7 +836,7 @@ margin-right: 20px;
     }
 
     .products p {
-        padding: 10px 20px;
+        padding: 0px 10px;
     }
 
     .items {
@@ -898,6 +898,9 @@ margin-right: 20px;
     .card-container {
         flex-direction: column;
         align-items: center;
+            width: 100%;
+    margin: 0;
+    gap: 10;
     }
 
     .links li {
