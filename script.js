@@ -30,7 +30,8 @@
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
+
+    document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById("imageModal");
     const btn = document.getElementById("view-cert-btn");
     const modalImg = document.getElementById("modal-img");
