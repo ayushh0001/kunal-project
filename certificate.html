@@ -28,15 +28,21 @@
   </section>
   <div class="certificate-container">
   <div class="certificate-image">
-    <img src="certificate.jpeg" alt="FSSAI Certificate">
+    <img id="certificate-img" src="certificate.jpeg" alt="FSSAI Certificate">
   </div>
   <div class="certificate-details">
     <h2>Certificate Details</h2>
     <p>
       This certificate verifies that we adhere to the stringent guidelines set by the Food Safety and Standards Authority of India (FSSAI), ensuring that our export processes and products are safe and compliant with all regulatory requirements. Our certification underscores our dedication to delivering high-quality, safe food products to our customers worldwide.
     </p>
-    <button>View Certificate</button>
+    <button id="view-cert-btn">View Certificate</button>
   </div>
+</div>
+
+<!-- The Modal -->
+<div id="imageModal" class="modal">
+  <span class="close-btn">&times;</span>
+  <img class="modal-content" id="modal-img">
 </div>
 
  <footer>
@@ -73,5 +79,6 @@
             <p>&copy; 2025 ADIK Overseas LLP. All rights reserved.</p>
         </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

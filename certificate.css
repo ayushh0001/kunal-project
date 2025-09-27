@@ -172,3 +172,110 @@ footer p{
     width: 20%;
     margin-top: 50px;
 }
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 96vh;
+  transform: translate(-50%, -50%);
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.content-blur {
+  filter: blur(5px);
+  transition: filter 0.3s ease-in-out;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .certificate-container {
+    flex-direction: column;
+    margin: 40px 20px;
+  }
+
+  .certificate-details {
+    padding: 30px 20px;
+  }
+
+  .certificate-section h1 {
+    font-size: 2rem;
+  }
+
+  .certificate-section p {
+    font-size: 1rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .f-info,
+  .quick-links,
+  .social-links,
+  .f-location {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .f-info {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .certificate-section {
+    height: 300px;
+  }
+
+  .certificate-details h2 {
+    font-size: 20px;
+  }
+
+  .certificate-details p {
+    font-size: 14px;
+  }
+
+  .certificate-details button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+}
