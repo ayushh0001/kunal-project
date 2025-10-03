@@ -213,9 +213,17 @@ span{
   text-align: center;
   color: white;
   overflow: hidden;
+
 }
 
 /* Background image */
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+}
 .hero::before {
   content: "";
   position: absolute;
@@ -223,7 +231,7 @@ span{
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('background.png') no-repeat center center/cover;
+  background: rgba(0, 0, 0, 0.5);
     /* adjust blur */
     filter: blur(5px) brightness(0.7);
   transform: scale(1.1); /* prevents image edges from showing */
@@ -454,6 +462,7 @@ span{
     align-items: center;
     
   }
+  
 
   .card img {
     width: 100%;
@@ -735,7 +744,12 @@ span{
     width: 20%;
     margin-top: 50px;
 }
-
+.back-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(4px) brightness(0.7); /* Apply blur + darken directly to video */
+}
 
 
  @media (max-width: 768px) {
