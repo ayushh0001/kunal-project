@@ -748,7 +748,7 @@ span{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: blur(4px) brightness(0.7); /* Apply blur + darken directly to video */
+  filter: blur(3px) brightness(0.7); /* Apply blur + darken directly to video */
 }
 
 
@@ -964,4 +964,8 @@ margin-right: 20px;
     align-items: center;  
     margin: 20px;  
  }
+
+ .back-video {
+  filter: blur(1px) brightness(0.9); /* Apply blur + darken directly to video */
+}
 }
