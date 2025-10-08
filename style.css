@@ -969,3 +969,37 @@ margin-right: 20px;
   filter: blur(1px) brightness(0.9); /* Apply blur + darken directly to video */
 }
 }
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .hero {
+        height: 80vh;
+    }
+    .adik div h1 {
+        font-size: 4rem;
+        margin: 10px 40px;
+        padding-top: 60px;
+    }
+    .adik div p {
+        font-size: 1.2rem;
+        margin: 13px 40px;
+    }
+    .products p {
+        padding: 10px 100px;
+    }
+    .card-area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card-container, .contact-us, .footer {
+        flex-direction: column;
+    }
+    .card, .contact-us .left, .contact-us .right, .form {
+        width: 100%;
+    }
+    .footer > div {
+        margin-bottom: 20px;
+    }
+    .f-info {
+        width: 100%;
+    }
+}
